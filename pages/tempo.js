@@ -7,14 +7,14 @@ function Tempo(props){
         <div>
            <div>{dynamicDateString} (dinâmico)</div> 
            <div>{props.staticDateString} (estático)</div> 
+           <div>
+               <Link href="/">
+                <a >Acessar página Home</a>
+                </Link>
+           </div>
         </div>        
     )
 }
-
-<Link href="/">
-<a >Acessar página Home</a>
-</Link>
-
 
 export function getStaticProps(){
     const staticDate = new Date();
