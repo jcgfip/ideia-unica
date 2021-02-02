@@ -14,9 +14,10 @@ export function getStaticProps(){
     const staticDate = new Date();
     const staticDateString = staticDate.toGMTString();
     return{
+        //pega a hora atual e só atualiza após 10 segundos
         props: {
             staticDateString
-        }
+        }, revalidate: 10
     }
 }
 
