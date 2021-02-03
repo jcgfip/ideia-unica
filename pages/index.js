@@ -3,8 +3,6 @@ import Link from 'next/link';
 
 function Home(){
     return <div>
-        <link rel="stylesheet" href="../_css/estilo.css"/>
-
         <h1>FIP</h1>
         
         <Contador />
@@ -20,26 +18,28 @@ function Home(){
                 </Link>
             </div>
 
-        <footer id="rodape">
-                <p> == página em desenvolvimento ==</p>
-                <a href="http://www.fip.com.br" target="blank">fip.com.br</a>
+        <footer>
+            <p> Em desenvolvimento ~ by JC</p>
+            <a href="http://www.fip.com.br" target="blank">fip.com.br</a>
         </footer>
 
         </div>
 }
 
 function Contador(){
-    const [contador,setContador] = useState(1);
-
+    const [contador, setContador] = useState(1);
+    
     function adicionarContador(){
         setContador(contador + 1);
     }
+
     return(
         <div>
             <div>{contador}</div>
             <button onClick={adicionarContador}>Adicionar</button>
         </div>
     )
+
 }
 
 export default Home
