@@ -3,20 +3,22 @@ import Link from 'next/link';
 
 function Home(){
     return <div>
-        <h3>Home 3</h3>
+        <h1>FIP</h1>
+        
         <Contador />
-        <div>Teste</div>
-
+        
+            <p></p>
             <Link href="/sobre">
-                <a>Acessar página Sobre</a>
+                <a>Sobre</a>
             </Link>
-            
+            <p></p>
             <div>
                 <Link href="/tempo">
-                <a>Acessar página Tempo</a>
+                <a>Tempo</a>
                 </Link>
             </div>
-            
+        <p></p>
+        <footer>* página em desenvolvimento</footer>     
         </div>
 }
 
