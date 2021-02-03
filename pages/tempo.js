@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 function Tempo(props){
     const dynamicDate = new Date();
-    const dynamicDateString = dynamicDate.toGMTString();
+    const dynamicDateString = dynamicDate.toLocaleString();
     return (
         <div>
            <div>{dynamicDateString} (dinâmico)</div> 
@@ -18,7 +18,7 @@ function Tempo(props){
 
 export function getStaticProps(){
     const staticDate = new Date();
-    const staticDateString = staticDate.toGMTString();
+    const staticDateString = staticDate.toLocaleString();
     return{
         //pega a hora atual e só atualiza após 10 segundos
         props: {

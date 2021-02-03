@@ -15,7 +15,7 @@ function Home(){
             </Link>
             <p></p>
             <div>
-                <Link href="/tempo">
+                <Link href="/api/tempo">
                 <a>Tempo</a>
                 </Link>
             </div>
