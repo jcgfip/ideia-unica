@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 function Home(){
     return <div>
+        <link rel="stylesheet" href="../_css/estilo.css"/>
+
         <h1>FIP</h1>
         
         <Contador />
@@ -17,8 +19,12 @@ function Home(){
                 <a>Tempo</a>
                 </Link>
             </div>
-        <p></p>
-        <footer>* página em desenvolvimento</footer>     
+
+        <footer id="rodape">
+                <p> == página em desenvolvimento ==</p>
+                <a href="http://www.fip.com.br" target="blank">fip.com.br</a>
+        </footer>
+
         </div>
 }
 

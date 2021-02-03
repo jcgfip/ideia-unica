@@ -9,7 +9,7 @@ function Tempo(props){
            <div>{props.staticDateString} (estático)</div> 
            <div>
                <Link href="/">
-                <a >Acessar página Home</a>
+                <a >voltar</a>
                 </Link>
            </div>
         </div>        
